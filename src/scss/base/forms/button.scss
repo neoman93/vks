@@ -1,0 +1,21 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-flex;
+	font-size: rem(16);
+	padding: rem(13) rem(16);
+	background-color: $darkBlue;
+	color: $white;
+	font-weight: 700;
+	font-family: 'Roboto';
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: darken($darkBlue, 10%);
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}

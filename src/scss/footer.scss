@@ -1,0 +1,145 @@
+//====================================================================================================
+.footer {
+	background-color: $darkBlue;
+	padding: rem(100) 0;
+	color: $white;
+	font-size: rem(15);
+	font-weight: 500;
+	// .footer__container
+
+	&__container {
+	}
+
+	// .footer__body
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: $mobile) {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&__logo,
+	&__menu,
+	&__contact {
+		flex: 1 1 33.333%;
+		@media (max-width: $tablet) {
+			flex: 1 1 auto;
+		}
+		@media (max-width: $mobileSmall) {
+			display: block;
+		}
+	}
+	// .footer__logo
+
+	&__logo {
+		@media (max-width: $mobile) {
+			margin-bottom: rem(30);
+		}
+		img {
+			@media (max-width: $mobile) {
+				margin-bottom: rem(30);
+			}
+		}
+	}
+
+	// .footer__company-name
+
+	&__company-name {
+		margin-top: rem(15);
+		font-size: rem(18);
+		@media (max-width: $tablet) {
+			display: block;
+			margin-bottom: rem(30);
+		}
+		@media (max-width: $mobile) {
+			margin-bottom: rem(40);
+		}
+	}
+
+	// .footer__menu
+
+	&__menu {
+		@media (max-width: $mobile) {
+			margin-bottom: rem(30);
+		}
+	}
+
+	// .footer__list
+
+	&__list {
+	}
+
+	// .footer__list-link
+
+	&__list-link {
+		line-height: math.div(32, 15);
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	// .footer__contact
+
+	&__contact {
+		@media (max-width: $mobile) {
+			margin-bottom: rem(30);
+		}
+	}
+
+	// .footer__address
+
+	&__address {
+		display: block;
+		margin-bottom: rem(20);
+	}
+
+	// .footer__email
+
+	&__email {
+		display: block;
+		margin-bottom: rem(20);
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	// .footer__social-links
+
+	&__social-links {
+		margin-bottom: rem(20);
+
+		display: flex;
+		column-gap: rem(15);
+		@media (max-width: $mobile) {
+			display: block;
+		}
+	}
+
+	&__whatsapp-link,
+	&__telegram-link {
+		display: inline-block;
+		position: relative;
+		padding-left: rem(25);
+		&:hover {
+			text-decoration: underline;
+		}
+		span {
+			position: absolute;
+			left: 0;
+		}
+	}
+	// .footer__whatsapp-link
+
+	&__whatsapp-link {
+	}
+
+	// .footer__telegram-link
+
+	&__telegram-link {
+	}
+}
+
+//====================================================================================================

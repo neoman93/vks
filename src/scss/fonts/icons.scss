@@ -1,0 +1,50 @@
+%ic {
+	font-family: 'icons';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*='_icon-'] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-advantage1:before {
+	content: '\e900';
+}
+._icon-advantage2:before {
+	content: '\e901';
+}
+._icon-advantage3:before {
+	content: '\e902';
+}
+._icon-advantage4:before {
+	content: '\e903';
+}
+._icon-advantage5:before {
+	content: '\e904';
+}
+._icon-advantage6:before {
+	content: '\e905';
+}
+._icon-arrow:before {
+	content: '\e906';
+}
+._icon-logo2:before {
+	content: '\e907';
+}
+._icon-telegram:before {
+	content: '\e908';
+}
+._icon-whatsapp:before {
+	content: '\e909';
+}
+._icon-who-we-are:before {
+	content: '\e90a';
+}
